@@ -16,4 +16,6 @@
 - Have cached content.
 - 44 Edge locations
 
+![alt text](https://github.com/ajiks143/aws-solution-architect-associate-2019-notes/blob/master/overview/aws_regions.png "AWS-Regions-AZs")
+
 **Reference**: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
