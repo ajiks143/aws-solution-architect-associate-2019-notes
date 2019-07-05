@@ -119,15 +119,12 @@ create an AMI from the instance
 - Placement stratergy for EC2 instances
 - Types:
      - **Cluster**
-        - Great network but if rack fails, all instances fail, Same AZs are used.
-        - Suited for low latency , faster big data jobs.
-        - ![alt text](https://github.com/ajiks143/aws-solution-architect-associate-2019-notes/blob/master/EC2/Cluster.png "Cluster")
-        
+       - Great network but if rack fails, all instances fail, Same AZs are used.
+       - Suited for low latency , faster big data jobs.
+       - ![alt text](https://github.com/ajiks143/aws-solution-architect-associate-2019-notes/blob/master/EC2/Cluster.png "Cluster") 
      - **Spread**
-        - Across different AZs and different physical hardware
-        - Only 7 instances per AZ per placement group
-        - Useful for HA application like web application, Kafka clusters etc.
-        - ![alt text](https://github.com/ajiks143/aws-solution-architect-associate-2019-notes/blob/master/EC2/Spread.png "Spread")
-
-
+       - Across different AZs and different physical hardware
+       - Only 7 instances per AZ per placement group
+       - Useful for HA application like web application, Kafka clusters etc.
+       - ![alt text](https://github.com/ajiks143/aws-solution-architect-associate-2019-notes/blob/master/EC2/Spread.png "Spread")
       
