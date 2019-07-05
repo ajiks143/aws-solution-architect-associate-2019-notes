@@ -15,4 +15,4 @@
 - Passive - Multi AZ
 - Active - Horizontal scaling
 
-** Load Balancing**
+**Load Balancing**
