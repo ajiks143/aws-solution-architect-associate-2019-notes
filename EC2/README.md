@@ -71,7 +71,7 @@ failures.
     - Allocated for your account for a 3 year period reservation
     - More expensive
     - Useful for software that have complicated licensing model (BYOL–Bring Your Own License) Or for companies that have strong regulatory or compliance needs
- - Dedicated Instances:
+ - **Dedicated Instances:**
     - Instances running on hardware that’s dedicated to you
     - May share hardware with other instances in same account
     - No control over instance placement (can move hardware after Stop / Start)
@@ -84,3 +84,39 @@ failures.
   - G: applications that need a GPU – video rendering / machine learning
   - T2 / T3: burstable instances (up to a capacity) - When CPU goes beyon certain capacity.
   - T2 / T3 - unlimited: unlimited burst
+
+**AMI:**
+  - Amazon Machine Image
+  - Can be built on Linux or Windows Machine
+  - **Advantages:**
+    - Pre-installed packages
+    - Faster boot time
+    - Can pre load softwares for monitoring security etc.
+    - Control on maintainence and update
+  - Built for a specific region
+  - Public AMI(s) can be used from Amazon Marketplace.
+  - AMI(s) are stored in S3 and are private and locked for the region by default
+  - Can make the AMI(s) public and share with other accounts or users using Amazon Marketplace.
+  
+  - **Cross Account AMI copy:**
+    - You can share an AMI with another AWS account. 
+    - Sharing an AMI does not affect the ownership of the AMI. 
+    - If you copy an AMI that has been shared with your account, you are the owner of the target AMI in 
+your account. 
+    - To copy an AMI that was shared with you from another account, the owner of the source AMI must 
+grant you read permissions for the storage that backs the AMI, either the associated EBS snapshot 
+(for an Amazon EBS-backed AMI) or an associated S3 bucket (for an instance store-backed AMI).
+    - Limits:
+        - You can't copy an encrypted AMI that was shared with you from another account. Instead, if the 
+underlying snapshot and encryption key were shared with you, you can copy the snapshot while re-
+encrypting it with a key of your own. You own the copied snapshot, and can register it as a new AMI.
+        - You can't copy an AMI with an associated billingProduct code that was shared with you from another 
+account. This includes Windows AMIs and AMIs from the AWS Marketplace. To copy a shared AMI 
+with a billingProduct code, launch an EC2 instance in your account using the shared AMI and then 
+create an AMI from the instance
+
+**Placement Group:**
+- Placement stratergy for EC2 instances
+- Types:
+    - Cluster
+      
