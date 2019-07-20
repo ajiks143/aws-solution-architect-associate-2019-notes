@@ -127,4 +127,3 @@ create an AMI from the instance
        - Only 7 instances per AZ per placement group
        - Useful for HA application like web application, Kafka clusters etc.
        - ![alt text](https://github.com/ajiks143/aws-solution-architect-associate-2019-notes/blob/master/EC2/Spread.png "Spread")
-      
