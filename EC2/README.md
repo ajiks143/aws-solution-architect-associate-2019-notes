@@ -88,11 +88,11 @@ failures.
 **AMI:**
   - Amazon Machine Image
   - Can be built on Linux or Windows Machine
-  - **Advantages:**
-    - Pre-installed packages
-    - Faster boot time
-    - Can pre load softwares for monitoring security etc.
-    - Control on maintainence and update
+- **Advantages:**
+  - Pre-installed packages
+  - Faster boot time
+  - Can pre load softwares for monitoring security etc.
+  - Control on maintainence and update
   - Built for a specific region
   - Public AMI(s) can be used from Amazon Marketplace.
   - AMI(s) are stored in S3 and are private and locked for the region by default
