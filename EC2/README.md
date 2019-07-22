@@ -3,6 +3,7 @@
 **Features:**
 - Elastic compute cloud
 - Virtual computing environments, known as **instances**
+- Soft limit of 20 instances per region, can be changed after contacting AWS
 - Preconfigured templates for your instances, known as **Amazon Machine Images (AMIs)**, that package the bits you need for your server (including the operating system and additional software)
 - Various configurations of CPU, memory, storage, and networking capacity for your instances, known as **instance types**
 - Secure login information for your instances using key pairs (AWS stores the public key, and you store the private key in a secure place)
@@ -27,7 +28,7 @@
 - Restarting EC2 instance changes public IP
 - For fixed public IP use Elastic IP
 - Only attach 1 instance at a time
-- By default 4 Elastic IP(s) for an account
+- By default 5 Elastic IP(s) for an account
 - Not a good architecture
 
 
