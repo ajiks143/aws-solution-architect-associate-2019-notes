@@ -52,5 +52,21 @@
 		  - User does not lose session data, makes use of cookies
 		  - Load on instances would be high if enabled. 
 
-	      
+**Auto Scaling**
+ - Correct no of EC2 instance to handle the load.
+ - Collection of EC2 instances called Auto Scaling Group (ASG)
+ - Has min, desired and max capacity measured in terms of no of EC2 instances.
+ - Launch configuration
+     - AMI + instance type
+	  - EC2 user data
+	  - EBS volumes
+	  - Security groups
+	  - SSH key pairs
+- Scaling options
+	  - Manual
+      - Schedule - Function of date and time
+      - Scale on demand - Based of scaling policies
+      - Scale based on Cloud watch alarms both standard and custom metric
+ - Termination policy - Delete instances from AZ with oldest configurations.  
+- Cooldown period - Ensures ASG does not launch or terminated additional resources before previous scaling takes effect.	      
 
